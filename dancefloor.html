@@ -6,11 +6,19 @@
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/monkey.js"></script>
+    <script src="src/customdancer.js"></script>
+    <script src="src/spiderman.js"></script>
   </head>
-  <body>
+  <body id="body">
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>    </div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="MonkeyDancer">add a monkey dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SpidermanDancer">add a spidey dancer</a>
+      <form  input='text' class='input'> Search it! <input type='text' class="searchBox"> <a href="#"  class="addDancerButton" data-dancer-maker-function-name="CustomDancer" >Search</a>  </form>
+    </div>
+    <div class='danceCircle'></div>
     <script src="src/init.js"></script>
   </body>
 </html>
