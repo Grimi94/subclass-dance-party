@@ -3,13 +3,13 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url(http://melbournejukebox.com/wp-content/uploads/2013/08/floor1.jpg);
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .input, .addDancerButton{
   padding:5px 12px;
   float:right;
 }
@@ -25,3 +25,50 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.monkey{
+  height: 10%;
+  width: 10%;
+  position: absolute;
+}
+
+
+.custom{
+  height: 10%;
+  width: 10%;
+  position: absolute;
+}
+
+.danceCircle {
+  position:absolute;
+    top: 50%;
+    left: 50%;
+    width:45em;
+    height:45em;
+    margin-top: -22.5em; /*set to a negative number 1/2 of your height*/
+    margin-left: -22.5em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes move {
+    from { left: left; }
+    to{ left: 100px;}
+}
+.custom {
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: all 1.0s linear;
+    -moz-transition: all 1.0s linear;
+    -o-transition: all 1.0s linear;
+    -ms-transition: all 1.0s linear;
+    transition: all 1.0s linear;
+}
+.custom .move {
+    left: 200px;
+    top: 100px;
+}
+
